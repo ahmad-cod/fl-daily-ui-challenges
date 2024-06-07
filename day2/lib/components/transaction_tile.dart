@@ -37,12 +37,18 @@ class TransactionTile extends StatelessWidget {
       //           height: 23,
       //         )),
       // ),
-      
-      leading: Image.asset('lib/images/${transaction.imagePath}.png', width: 80, height: 80,),
-      title: Text(transaction.client,
+
+      leading: Image.asset(
+        'lib/images/${transaction.imagePath}.png',
+        width: 80,
+        height: 80,
+      ),
+      title: Text(
+        transaction.client,
         style: const TextStyle(
           fontWeight: FontWeight.bold,
-        ),),
+        ),
+      ),
       subtitle: Row(
         children: [
           GreyText(data: transaction.role),
@@ -53,19 +59,23 @@ class TransactionTile extends StatelessWidget {
       trailing: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          MoneyText(amount: transaction.amount, moneyPrefix: '$moneyPrefix\$',),
+          MoneyText(
+            amount: transaction.amount,
+            moneyPrefix: '$moneyPrefix\$',
+          ),
           Container(
-            padding: const EdgeInsets.all(4),
-            decoration: const BoxDecoration(
-              color: Color(0xFFE9EFFC),
-            ),
-            child: Text(transaction.transactionType.toUpperCase(),
-              style: TextStyle(
-                color: transaction.transactionType == 'received' ? const Color(0xFF5B8BE8) : const Color(0xFF979EA8),
-                
+              padding: const EdgeInsets.all(4),
+              decoration: const BoxDecoration(
+                color: Color(0xFFE9EFFC),
               ),
-            )
-          )
+              child: Text(
+                transaction.transactionType.toUpperCase(),
+                style: TextStyle(
+                  color: transaction.transactionType == 'received'
+                      ? const Color(0xFF5B8BE8)
+                      : const Color(0xFF979EA8),
+                ),
+              ))
         ],
       ),
     );

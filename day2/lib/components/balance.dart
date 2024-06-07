@@ -11,9 +11,10 @@ class WalletBalance extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Heading4(data: 'Wallet Balance'),
-
         BlurredCard(position: '1'),
-        SizedBox(height: 10,), 
+        SizedBox(
+          height: 10,
+        ),
       ],
     );
   }

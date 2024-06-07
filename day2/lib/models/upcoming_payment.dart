@@ -1,5 +1,5 @@
 class UpcomingPayment {
-  const UpcomingPayment ({
+  const UpcomingPayment({
     required this.client,
     required this.imagePath,
     required this.amount,

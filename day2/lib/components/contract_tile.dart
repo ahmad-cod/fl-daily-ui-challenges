@@ -36,8 +36,12 @@ class ContractTile extends StatelessWidget {
       //           height: 24,
       //         )),
       // ),
-      
-      leading: Image.asset('lib/images/${contract.imagePath}.png', width: 80, height: 80,),
+
+      leading: Image.asset(
+        'lib/images/${contract.imagePath}.png',
+        width: 80,
+        height: 80,
+      ),
       title: Text(
         contract.client,
         style: const TextStyle(

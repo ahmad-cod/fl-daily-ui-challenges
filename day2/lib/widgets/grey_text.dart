@@ -6,10 +6,11 @@ class GreyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(data,
-            style: const TextStyle(
-              color: Colors.grey,
-            ),
-          );
+    return Text(
+      data,
+      style: const TextStyle(
+        color: Colors.grey,
+      ),
+    );
   }
 }

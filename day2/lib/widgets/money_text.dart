@@ -8,10 +8,9 @@ class MoneyText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text('$moneyPrefix$amount',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-            )
-          );
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 16,
+        ));
   }
 }

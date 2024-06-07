@@ -15,12 +15,11 @@ class Contracts extends StatelessWidget {
         SizedBox(
           height: 120,
           child: ListView.builder(
-            itemCount: contracts.length,
-            itemBuilder: (context, index) {
-              final contract = contracts[index];
-              return ContractTile(contract: contract);
-            }
-          ),
+              itemCount: contracts.length,
+              itemBuilder: (context, index) {
+                final contract = contracts[index];
+                return ContractTile(contract: contract);
+              }),
         )
       ],
     );

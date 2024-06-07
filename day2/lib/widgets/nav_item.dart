@@ -9,9 +9,13 @@ class NavItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, color: Colors.grey,),
+        Icon(
+          icon,
+          color: Colors.grey,
+        ),
         const SizedBox(width: 15),
-        Text(text,
+        Text(
+          text,
           style: const TextStyle(
             color: Colors.grey,
           ),

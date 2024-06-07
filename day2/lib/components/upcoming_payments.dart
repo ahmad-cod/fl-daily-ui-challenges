@@ -20,23 +20,23 @@ class UpcomingPayments extends StatelessWidget {
               Row(
                 children: [
                   Text('View all'),
-                  SizedBox(width: 4,),
+                  SizedBox(
+                    width: 4,
+                  ),
                   Icon(Icons.arrow_forward_outlined)
                 ],
               )
             ],
           ),
         ),
-
         SizedBox(
           height: 150,
           child: ListView.builder(
-            itemCount: uPayments.length,
-            itemBuilder: (context, index) {
-              final data = uPayments[index];
-              return UPaymentTile(data: data);
-            }
-          ),
+              itemCount: uPayments.length,
+              itemBuilder: (context, index) {
+                final data = uPayments[index];
+                return UPaymentTile(data: data);
+              }),
         )
       ],
     );

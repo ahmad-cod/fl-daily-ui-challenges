@@ -6,12 +6,13 @@ class Heading4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(data,
-          style: const TextStyle(
-            fontFamily: 'OPTIVenus',
-            fontSize: 17,
-            fontWeight: FontWeight.bold,
-          ),
-        );
+    return Text(
+      data,
+      style: const TextStyle(
+        fontFamily: 'OPTIVenus',
+        fontSize: 17,
+        fontWeight: FontWeight.bold,
+      ),
+    );
   }
 }

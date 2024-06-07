@@ -15,12 +15,18 @@ class MobileScaffold extends StatelessWidget {
         children: [
           walletBalance,
           addWallet,
-          const SizedBox(height: 38,),
+          const SizedBox(
+            height: 38,
+          ),
           upcomingPayments,
           experienceDigitalBanking,
-          const SizedBox(height: 38,),
+          const SizedBox(
+            height: 38,
+          ),
           contracts,
-          const SizedBox(height: 38,),
+          const SizedBox(
+            height: 38,
+          ),
           transactions,
         ],
       ),

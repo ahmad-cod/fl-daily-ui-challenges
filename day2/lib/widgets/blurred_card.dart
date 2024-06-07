@@ -9,16 +9,18 @@ class BlurredCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-          SvgPicture.asset(
-            'lib/images/card$position.svg',
-            width: 300,
-            height: 200,
-          ),
-          Positioned(
-            bottom: 7,
-            left: 7,
-            child: Image.asset('lib/images/blur$position.png', height: 90,)
-          )
-        ]);
+      SvgPicture.asset(
+        'lib/images/card$position.svg',
+        width: 300,
+        height: 200,
+      ),
+      Positioned(
+          bottom: 7,
+          left: 7,
+          child: Image.asset(
+            'lib/images/blur$position.png',
+            height: 90,
+          ))
+    ]);
   }
 }

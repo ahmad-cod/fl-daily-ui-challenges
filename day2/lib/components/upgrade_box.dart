@@ -11,29 +11,25 @@ class UpgradeBox extends StatelessWidget {
       height: 140,
       alignment: Alignment.bottomLeft,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(32),
-        image: const DecorationImage(
-          image: AssetImage('lib/images/lines.png')
-        ),
-        gradient: const LinearGradient(
-          colors: [
-            Color(0xFFF8AB8A),
-            Color(0xFFF8DA8A),
-          ],
-          begin: AlignmentDirectional.topEnd,
-          end: AlignmentDirectional.bottomStart,
-          stops: [0.047, 0.837]
-        )
-      ),
+          borderRadius: BorderRadius.circular(32),
+          image:
+              const DecorationImage(image: AssetImage('lib/images/lines.png')),
+          gradient: const LinearGradient(
+              colors: [
+                Color(0xFFF8AB8A),
+                Color(0xFFF8DA8A),
+              ],
+              begin: AlignmentDirectional.topEnd,
+              end: AlignmentDirectional.bottomStart,
+              stops: [0.047, 0.837])),
       child: const Text(
         'Upgrade to Pro',
         style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          fontSize: 18,
-          fontFamily: 'OPTIVenus',
-          letterSpacing: 0.5
-        ),
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            fontFamily: 'OPTIVenus',
+            letterSpacing: 0.5),
       ),
     );
   }

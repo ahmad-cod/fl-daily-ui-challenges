@@ -8,19 +8,14 @@ class DesktopScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: myDefaultBgColor,
-      // appBar: myAppBar,
       body: Row(
         children: [
-          // open drawer
           myDrawer,
-
-          // rest of the body
           Expanded(
               flex: 3,
               child: Container(
                 padding: const EdgeInsets.only(left: 40, right: 20),
                 child: ListView(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const SizedBox(
                       height: 80,
@@ -40,13 +35,14 @@ class DesktopScaffold extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 60,),
+                    const SizedBox(
+                      height: 60,
+                    ),
                     upcomingPayments,
                     experienceDigitalBanking,
                   ],
                 ),
               )),
-
           Expanded(
               flex: 2,
               child: Container(
