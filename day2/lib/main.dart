@@ -1,4 +1,8 @@
-import 'package:day2/home_page.dart';
+import 'package:day2/mythemes.dart';
+import 'package:day2/responsive/desktop_scaffold.dart';
+import 'package:day2/responsive/mobile_scaffold.dart';
+import 'package:day2/responsive/responsive_layout.dart';
+import 'package:day2/responsive/tablet_scaffold.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: myTheme,
+      home: const ResponsiveLayout(
+        mobileScaffold: MobileScaffold(),
+        tabletScaffold: TabletScaffold(),
+        desktopScaffold: DesktopScaffold(),
+      ),
     );
   }
 }
