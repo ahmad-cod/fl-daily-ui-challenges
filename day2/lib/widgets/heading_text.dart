@@ -8,7 +8,8 @@ class Heading4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(data,
           style: const TextStyle(
-            fontSize: 16,
+            fontFamily: 'OPTIVenus',
+            fontSize: 17,
             fontWeight: FontWeight.bold,
           ),
         );
